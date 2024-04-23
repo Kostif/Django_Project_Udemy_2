@@ -45,7 +45,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-h&6+@)u=*9hov0
 
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['.kostif.net']
+ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOSTS_URL')]
 
 
 # Application definition
