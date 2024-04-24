@@ -21,4 +21,7 @@ jobs:
             cd Django_Project_Udemy_2
             docker compose down
             docker compose rm
+            git pull
+            docker compose build
+            docker compose up -d
             exit
