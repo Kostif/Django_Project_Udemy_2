@@ -17,13 +17,5 @@ jobs:
           password: ${{ secrets.OCEAN_PASS }}
         
           script: |
-            cd Repositories
-            cd Django_Project_Udemy_2
-            docker compose down && docker compose rm
-            git pull
-            docker compose build
-            docker compose up -d
-            docker exec -it django_project_udemy_2-backend-1 bash
-            python manage.py makemigrations
-            python manage.py migrate
+            whoami
             exit
