@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: execute remote shh commands using password
-       uses: actions/checkout@v3
+       uses: actions/checkout@v4
        with:
           host: ${{secrets.OCEANIP}}
           key: ${{secrets.OCEAN_SSH}}
