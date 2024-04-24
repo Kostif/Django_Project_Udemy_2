@@ -11,7 +11,7 @@ jobs:
      - name: execute remote shh commands using password
        uses: appleboy/ssh-action@v1.0.3
        with:
-          host: ${{ secrets.OCEANIP }}
+          host: ${{ secrets.OCEAN_IP }}
           key: ${{ secrets.OCEAN_SSH }}
           username: ${{ secrets.OCEAN_USERNAME }}
           password: ${{ secrets.OCEAN_PASS }}
