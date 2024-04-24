@@ -10,7 +10,9 @@ services:
       - "8000:8000"
     volumes:
       - .:/app
-  
+    restart:
+      always
+
   postgres_eden:
     image: postgres:13.4
     container_name: postgres_eden
@@ -26,6 +28,8 @@ services:
       - "5432:5432"
     volumes:
       - eden_db:/var/lib/postgresql/data
+    restart:
+      always
 
 volumes:
   eden_db:
