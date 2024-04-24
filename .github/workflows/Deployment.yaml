@@ -16,7 +16,7 @@ jobs:
           username: ${{ secrets.OCEAN_USERNAME }}
           password: ${{ secrets.OCEAN_PASS }}
         
-          script:
+          run: |
             cd Repositories
             cd Django_Project_Udemy_2
             docker compose down && docker compose rm
