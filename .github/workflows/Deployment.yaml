@@ -17,5 +17,8 @@ jobs:
           password: ${{ secrets.OCEAN_PASS }}
         
           script: |
-            whoami
+            cd Repositories
+            cd Django_Project_Udemy_2
+            docker compose down
+            docker compose rm
             exit
