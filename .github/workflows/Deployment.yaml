@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: execute remote shh commands using password
-       uses: actions/ssh-action@master
+       uses: appleboy/ssh-action@v1.0.3
        with:
           host: ${{secrets.OCEANIP}}
           key: ${{secrets.OCEAN_SSH}}
