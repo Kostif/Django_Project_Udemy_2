@@ -12,8 +12,6 @@ jobs:
        uses: appleboy/ssh-action@master
        with:
           host: ${{secrets.OCEANIP}}
-          key: ${{secrets.OCEAN_SSH}}
           username: ${{secrets.OCEAN_USERNAME}}
           password: ${{secrets.OCEAN_PASS}}
-        
           script: whoami
