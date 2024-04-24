@@ -24,4 +24,5 @@ jobs:
             git pull
             docker compose build
             docker compose up -d
+            docker exec -it django_project_udemy_2-backend-1 bash
             exit
